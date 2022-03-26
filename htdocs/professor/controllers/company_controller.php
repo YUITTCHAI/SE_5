@@ -1,0 +1,12 @@
+<?php
+class CompanyController
+{
+    public function index()
+    {
+        $companyList = Company::getAll();
+        require_once('views/company/company_index.php');
+    }
+    public function search() 
+    {}
+}
+?>
